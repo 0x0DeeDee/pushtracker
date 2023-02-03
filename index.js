@@ -15,19 +15,19 @@ app.listen(port, () => {
   console.log("App running at port:" + port);
 });
 
-cron.schedule("* * * * *", async () => {
+cron.schedule("0 0 0 * * * *", async () => {
     try {
         console.log('in cron');
       const PK = config.CH_KEY;
       const Pkey = `0x${PK}`;
   
       const signer = new ethers.Wallet(Pkey);
-    //   let url =
-    //     "https://api.coingecko.com/api/v3/simple/price?ids=ethereum-push-notification-service&vs_currencies=usd";
-    //   let response = await axios.get(url);
+      let url =
+        "https://api.coingecko.com/api/v3/simple/price?ids=ethereum-push-notification-service&vs_currencies=usd";
+      let response = await axios.get(url);
   
-    //   price = response.data.ethereum-push-notification-service.usd;
-    price = 0.25
+      price = response.data.ethereum-push-notification-service.usd;
+    
   
       // apiResponse?.status === 204, if sent successfully!
       const apiResponse = await PushAPI.payloads.sendNotification({
