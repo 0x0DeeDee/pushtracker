@@ -10,3 +10,5 @@ The objective of this project is to provide daily updates to the user regarding 
 - CoinGeko API
 - Java Script
 
+## Notification Screenshot
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/124380624/216648596-ba732aff-5108-4dc9-86d7-2cf654a1431d.png">
