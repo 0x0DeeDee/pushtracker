@@ -11,3 +11,4 @@ The objective of this project is to provide daily updates to the user regarding 
 - Java Script
 
 ## Notification Screenshot
+<img width="1134" alt="image" src="https://user-images.githubusercontent.com/124380624/216647741-7b2fb9e8-f1e9-4032-be61-a191079544ad.png">
